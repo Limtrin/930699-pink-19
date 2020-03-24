@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Федюнин](https://up.htmlacademy.ru/adaptive/19/user/930699).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Воздраганова](https://up.htmlacademy.ru/adaptive/19/user/1227143).
 
 ---
 
