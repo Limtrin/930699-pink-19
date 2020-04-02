@@ -8,7 +8,7 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="226" height="30" alt="HTML Academy: Пинк">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="HTML Academy: Пинк">
       </a>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
@@ -33,10 +33,16 @@
 
     <main class="page-main">
       <section class="main-picture">
-        <img class="main-picture__image" src="https://via.placeholder.com/150x150">
+        <h2 class="visually-hidden">
+          Главная картинка страницы
+        </h2>
+        <img class="main-picture__image" src="https://via.placeholder.com/150x150" width="320" height="462">
       </section>
 
       <section class="download">
+        <h2 class="visually-hidden">
+          Секция загрузки приложения
+        </h2>
         <a href="#" class="button download__button">
           Скачать приложение
         </a>
@@ -51,6 +57,9 @@
       </section>
 
       <section class="offer">
+        <h2 class="visually-hidden">
+          Преимущества
+        </h2>
         <p class="offer__intro">Устали от серости мегаполиса?</p>
         <p class="offer__intro">Нам есть, что вам предложить!</p>
         <ul class="offer__list">
@@ -79,7 +88,107 @@
             </p>
           </li>
         </ul>
-        <img class="offer__picture" src="https://via.placeholder.com/150x150">
+        <img class="offer__picture" src="https://via.placeholder.com/150x150" width="157" height="320" >
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">
+          Отзывы
+        </h2>
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list  slider__list">
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычне серые вещи! А ещё я познакомился со своей будущей женой в комментариях к приложенной фотографии</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="rates">
+        <h2 class="visually-hidden">
+          Тарифы подписки
+        </h2>
+        <table class="rates__list">
+          <th class="rates__header">
+            <td class="rates__title">
+              Стандарт
+            </td>
+            <td class="rates__title">
+              Стандарт
+            </td>
+            <td class="rates__title">
+              Стандарт
+            </td>
+          </th>
+          <tr class="rates__stats">
+            <td class="rates__value">
+              Розовый фильтр
+            </td>
+            <td class="rates__value">
+              Розовый фильтр
+            </td>
+            <td class="rates__value">
+              Розовый фильтр
+            </td>
+          </tr>
+          <tr class="rates__stats">
+            <td class="rates__value">
+              Смайлики
+            </td>
+            <td class="rates__value">
+              Смайлики
+            </td>
+            <td class="rates__value">
+              Смайлики
+            </td>
+          </tr>
+          <tr class="rates__stats">
+            <td class="rates__value">
+              Комментарии
+            </td>
+            <td class="rates__value">
+              Комментарии
+            </td>
+            <td class="rates__value">
+              Комментарии
+            </td>
+          </tr>
+        </table>
+        <p class="rates__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">
+          Обратная связь
+        </h2>
+        <p class="contacts__intro">Остались вопросы?</p>
+        <p class="contacts__intro">Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <b class="contacts__title">Звоните</b>
+            <p class="contacts__describe">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__title">Пишите</b>
+            <p class="contacts__describe">mail@htmlacademy.com</p>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__title">ПРиезжайте в гости</b>
+            <p class="contacts__describe">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <div class="map">
+        </div>
       </section>
     </main>
 
