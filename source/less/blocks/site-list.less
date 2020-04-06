@@ -1,0 +1,31 @@
+.site-list__item {
+  border-top: 1px solid @middle-grey-color;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px 0;
+  line-height: 22px;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: @pink-color;
+    }
+
+    &:active {
+      color: @pink-color-opacity;
+    }
+  }
+}
+
+.site-list__item--active {
+  a {
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
