@@ -1,3 +1,59 @@
 .posting {
   background-color: @light-grey-color;
 }
+
+.posting__filter {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.posting__range {
+  margin: 10px auto 35px;
+  display: block;
+  border-bottom: 1px solid @input-range-color;
+}
+
+.posting__buttons {
+  border-top: 1px solid @input-range-color;
+  padding: 40px 20px 30px;
+}
+
+.posting__button {
+  margin-bottom: 14px;
+}
+
+.posting__button--submit {
+  color: @pink-color;
+
+  &:hover {
+    background-color: @pink-color;
+    color: white;
+  }
+
+  &:active {
+    background-color: @pink-color;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    border: 2px solid @pink-color;
+  }
+}
+
+.posting__button--cancel {
+  color: @input-range-color;
+
+  &:hover {
+    border-color: @effects-color;
+    color: @effects-color;
+  }
+
+  &:active {
+    background-color: @effects-color;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    border: 2px solid @input-range-color;
+  }
+}
