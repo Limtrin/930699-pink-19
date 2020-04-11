@@ -48,11 +48,13 @@
         <h2 class="visually-hidden">
           Форма для конкурса
         </h2>
-        <p class="form-block__intro">
-          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-        </p>
+        <div class="wrapper">
+          <p class="form-block__intro">
+              Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          </p>
+        </div>
         <form action="https://echo.htmlacademy.ru" class="form-block__form form">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--name">
             <label for="surname" class="form__label">Фамилия</label>
             <input name="surname" id="surname" class="form__input" type="text" placeholder="Укажите фамилию*" required>
             <label for="name" class="form__label">Имя</label>
@@ -60,8 +62,10 @@
             <label for="lastname" class="form__label">Отчество</label>
             <input name="lastname" id="lastname" class="form__input" type="text" placeholder="Ну и отчество тоже">
           </fieldset>
-          <fieldset class="form__fieldset">
-            <p class="form__intro">Ваши безбашенные достижения в путешествии</p>
+          <fieldset class="form__fieldset form__fieldset--archivements">
+            <div class="wrapper">
+              <p class="form__intro">Ваши безбашенные достижения в путешествии</p>
+            </div>
             <label class="form__title">
               <input class="form__checkbox" type="checkbox" name="achievement" value="Селфи с акулой" checked>
               Сделал селфи с акулой
@@ -87,34 +91,34 @@
               Разгромил отель
             </label>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--address">
             <label for="phone" class="form__label"> Номер телефона</label>
             <input name="phone" id="phone" class="form__input" type="tel" placeholder="Номер, пожалуйста">
             <label for="email" class="form__label">Адрес почты</label>
             <input name="email" id="email" class="form__input" type="email" placeholder="Введите почту*" required>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--app">
             <p class="form__intro">С каким приложением путешествовали?</p>
-            <label>
-              <input type="radio" name="app" value="iOS" checked>
+            <label class="form__title form__title--radio">
+              <input class="form__radio" type="radio" name="app" value="iOS" checked>
               Pink для iOS
             </label>
-            <label>
-              <input type="radio" name="app" value="Android">
+            <label class="form__title form__title--radio">
+              <input class="form__radio" type="radio" name="app" value="Android">
               Pink на Android
             </label>
-            <label>
-              <input type="radio" name="app" value="Windows">
+            <label class="form__title form__title--radio">
+              <input class="form__radio" type="radio" name="app" value="Windows">
               Windows Phone
             </label>
           </fieldset>
-          <fieldset>
-            <p class="form__intro">Опишите свои эмоции</p>
+          <fieldset class="form__fieldset form__fieldset--emo">
+            <p class="form__intro form__intro--emo">Опишите свои эмоции</p>
             <label class="visually-hidden" for="emotions">Поле для ввода отзыва</label>
-            <textarea name="emotions" id="emotions" cols="30" rows="10" plceholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea name="emotions" class="form__textarea" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <fieldset>
-            <button type="submit" class="form__submit" value="Отправить">
+          <fieldset class="form__fieldset form__fieldset--sending">
+            <button type="submit" class="form__submit" value="Отправить">Отправить форму</button>
             <p class="form__essentials"><span>*</span> - Обязательные поля</p>
           </fieldset>
         </form>

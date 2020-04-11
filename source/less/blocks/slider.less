@@ -1,0 +1,25 @@
+.slider__dotes {
+  content: "";
+  border: 3px solid @slider-dotes-color;
+  border-radius: 100%;
+}
+
+.slider__toggle {
+  border-radius: 100%;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+.slider__toggle--active {
+  border: 3px solid @dark-grey-color;
+  margin: 0 2px;
+
+  &:active,
+  &:focus {
+    border: 3px solid @dark-grey-color;
+  }
+
+  .slider__dotes {
+    border-color: white;
+  }
+}

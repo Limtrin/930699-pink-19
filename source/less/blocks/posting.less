@@ -1,3 +1,81 @@
 .posting {
   background-color: @light-grey-color;
 }
+
+.posting__filter {
+  text-align: center;
+  padding-top: 20px;
+
+  label {
+    background-image: url("/img/photo-road-mobile@1x.jpg");
+    display: block;
+    height: 374px;
+  }
+}
+
+.posting__range {
+  margin: 10px auto 35px;
+  display: block;
+  border-bottom: 1px solid @input-range-color;
+  appearance: none;
+  border-radius: 2px;
+  width: 250px;
+  height: 2px;
+  outline: none;
+  background-color: @dark-blue-color;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background: white;
+    border-radius: 100%;
+    border: 2px solid @pink-color;
+    cursor: pointer;
+  }
+}
+
+.posting__buttons {
+  border-top: 1px solid @input-range-color;
+  padding: 40px 20px 30px;
+}
+
+.posting__button {
+  margin-bottom: 14px;
+}
+
+.posting__button--submit {
+  color: @pink-color;
+
+  &:hover {
+    background-color: @pink-color;
+    color: white;
+  }
+
+  &:active {
+    background-color: @pink-color;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    border: 2px solid @pink-color;
+  }
+}
+
+.posting__button--cancel {
+  color: @input-range-color;
+
+  &:hover {
+    border-color: @effects-color;
+    color: @effects-color;
+  }
+
+  &:active {
+    background-color: @effects-color;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    border: 2px solid @input-range-color;
+  }
+}
