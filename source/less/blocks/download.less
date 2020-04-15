@@ -2,6 +2,7 @@
   background-color: @dark-grey-color;
   padding: 42px 0 30px;
   color: white;
+  text-align: center;
 }
 
 .download__button {
@@ -33,4 +34,27 @@
   font-weight: 300;
   margin-top: 17px;
   line-height: 25px;
+}
+
+@media (min-width: @tablet-display) {
+  .download {
+    background-color: rgba(0, 0, 0, 0);
+
+    .wrapper {
+      padding: 0;
+    }
+  }
+  .download__describe {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: @desktop-display) {
+  .download__list {
+    padding-top: 80px;
+  }
+  .download__describe {
+    margin-top: 50px;
+  }
 }

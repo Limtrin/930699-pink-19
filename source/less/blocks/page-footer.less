@@ -1,7 +1,7 @@
 .page-footer {
   background-color: white;
   text-align: center;
-  padding: 38px;
+  padding: 38px 0;
 }
 
 .page-footer__logo {
@@ -13,4 +13,20 @@
   justify-content: center;
   font-size: 14px;
   padding-top: 4px;
+}
+
+@media (min-width: @tablet-display) {
+  .page-footer__wrapp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-footer__develope {  
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-display) {
+  .page-footer {
+    padding: 69px 0;
+  }
 }

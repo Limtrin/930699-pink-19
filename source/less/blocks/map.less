@@ -1,8 +1,27 @@
 .map {
-  background: url("/img/bg-map-mobile@1x.png");
+  background: url("/img/bg-map-desktop@1x.jpg");
   height: 200px;
+  position: relative;
 }
 
 .map__marker {
   margin-top: 60px;
+}
+
+@media (min-width: @tablet-display) {
+  .map {
+    height: 357px;
+  }
+  .map__marker {
+    margin-top: 177px;
+  }
+}
+
+@media (min-width: @desktop-display) {
+  .map {
+    height: 516px;
+  }
+  .map__marker {
+    margin-top: 277px;
+  }
 }
