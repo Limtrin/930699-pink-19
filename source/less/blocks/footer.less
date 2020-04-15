@@ -1,11 +1,32 @@
+.footer__image--desktop {
+  display: none;
+}
+
+.footer__icon {
+  position: absolute;
+}
+
 .footer__icon--twitter {
-  padding: 17px 33px 11px 15px;
+  top: 14px;
+  left: 15px;
 }
 
 .footer__icon--facebook {
-  padding: 11px 27px 11px 21px;
+  top: 12px;
+  left: 19px;
 }
 
 .footer__icon--youtube {
-  padding: 16px 30px 13px 18px;
+  top: 15px;
+  left: 18px;
+}
+
+@media (min-width: @desktop-display) {
+  .footer__image--mobile {
+    display: none;
+  }
+
+  .footer__image--desktop {
+    display: block;
+  }
 }

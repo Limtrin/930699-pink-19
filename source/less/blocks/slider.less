@@ -4,6 +4,10 @@
   border-radius: 100%;
 }
 
+.slider__nav {
+  display: none;
+}
+
 .slider__toggle {
   border-radius: 100%;
   margin: 0 7px;
@@ -21,5 +25,35 @@
 
   .slider__dotes {
     border-color: white;
+  }
+}
+
+@media (min-width: @tablet-display) {
+  .slider__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-display) {
+  .slider__list {
+    display: flex;
+  }
+
+  .slider__nav {
+    display: block;
+    padding-top: 48px;
+  }
+
+  .slider__nav--left {
+    padding-right: 66px;
+  }
+
+  .slider__nav--right {
+    padding-left: 66px;
+  }
+
+  .slider__toggles {
+    display: none;
   }
 }
