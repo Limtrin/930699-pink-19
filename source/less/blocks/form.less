@@ -40,8 +40,13 @@
 
 .form__fieldset--archivements {
   background-color: @light-grey-color;
+
+  legend {
+    display: none;
+  }
 }
 
+.form__legend,
 .form__intro {
   text-transform: uppercase;
   color: @pink-color;
@@ -93,6 +98,10 @@
 
 .form__fieldset--app {
   background-color: @light-grey-color;
+
+  legend {
+    display: none;
+  }
 }
 
 .form__title--radio {
@@ -120,7 +129,7 @@
   background: url("/img/icon-map-marker.svg") white no-repeat center;
 }
 
-.form__intro--emo {
+.form__legend--emo {
   padding-bottom: 17px;
 }
 
@@ -166,5 +175,283 @@
 
   span {
     color: @pink-color;
+  }
+
+  .form__essentials--hidden {
+    color: black;
+  }
+}
+
+.form-block__intro--tablet {
+  display: none;
+}
+
+.form__icon {
+  display: none;
+}
+
+.form__essentials--hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-display) {
+  .form__posting {
+    display: flex;
+    padding: 57px 0 50px;
+
+    .wrapper {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .form-block__intro {
+    font-size: 18px;
+    margin: 92px 60px 65px;
+  }
+
+  .form__intro {
+    display: none;
+  }
+
+  .form-block__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-block__intro--tablet {
+    display: block;
+  }
+
+  .form__area {
+    display: flex;
+  }
+
+  .form__fieldset--name {
+    order: 1;
+    padding-bottom: 0;
+
+    .form__label {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    .form__input {
+      width: 100%;
+    }
+
+    .form__area {
+      align-items: baseline;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form__fieldset--archivements {
+    order: 4;
+    background-color: white;
+    border: 2px solid @rates-border-color;
+    border-radius: 4px;
+    margin: 0 20px;
+    padding: 12px 58px 0;
+
+    .form__legend {
+      display: block;
+    }
+
+    .form__checkbox {
+      margin-right: 47px;
+    }
+  }
+
+  .form__fieldset--address {
+    order: 3;
+    border: 2px solid @rates-border-color;
+    border-radius: 4px;
+    margin: 26px 20px;
+    padding: 6px 58px 0;
+
+    .form__area {
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .form__icon {
+      background-color: @rates-border-color;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form__label {
+      order: 2;
+      padding-left: 20px;
+      margin-bottom: 35px;
+    }
+
+    .form__input {
+      order: 1;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .form__fieldset--app {
+    order: 2;
+    background-color: white;
+    border: 2px solid @rates-border-color;
+    border-radius: 4px;
+    margin: 0 20px;
+    padding: 16px 58px;
+
+    .form__legend {
+      display: block;
+    }
+  }
+
+  .form__fieldset--emo {
+    order: 5;
+    border: 2px solid @rates-border-color;
+    border-radius: 4px;
+    margin: 26px 20px;
+    padding: 6px 58px 43px;
+  }
+
+  .form__fieldset--sending {
+    order: 6;
+
+    .form__flex-container {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .form__submit {
+      width: 300px;
+    }
+  }
+
+  .form__legend {
+    padding: 30px 25px;
+  }
+
+  .form__radio {
+    margin-right: 47px;
+  }
+
+  .form__title--radio {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-display) {
+  .form__posting {
+    padding: 57px 0 50px;
+
+    .wrapper {
+      width: 63%;
+    }
+  }
+
+  .form-block__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-block__intro--tablet {
+    display: inline;
+  }
+
+  .form-block__intro {
+    margin: 92px 60px 72px;
+  }
+
+  .form__fieldset--name {
+    padding: 13px 9px 0;
+    width: 45%;
+
+    .form__area:last-child {
+      .form__input {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form__fieldset--app {
+    margin: 0 9px;
+    padding: 46px 32px 0;
+
+    .form__legend {
+      padding: 0 25px;
+    }
+
+    .form__title {
+      margin-left: 41px;
+    }
+  }
+
+  .form__fieldset--address {
+    width: 100%;
+    margin: 26px 10px;
+
+    .form__flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form__area {
+      width: 375px;
+    }
+
+    .form__label {
+      margin-bottom: 18px;
+    }
+  }
+
+  .form__fieldset--archivements {
+    width: 100%;
+    margin: 0 10px;
+
+    .form__flex-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 178px;
+    }
+
+    .form__title {
+      width: 305px;
+    }
+  }
+
+  .form__fieldset--emo {
+    width: 100%;
+    margin: 26px 10px;
+
+    .form__textarea {
+      height: 120px;
+      padding: 12px 19px;
+    }
+  }
+
+  .form__fieldset--sending {
+    width: 100%;
+    padding: 0 9px;
+
+    .form__submit {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__essentials--hidden {
+    display: inline;
   }
 }

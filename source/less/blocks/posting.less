@@ -7,7 +7,7 @@
   padding-top: 20px;
 
   label {
-    background-image: url("/img/photo-road-mobile@1x.jpg");
+    background: url("/img/photo-road-mobile@1x.jpg") no-repeat center;
     display: block;
     height: 374px;
   }
@@ -38,6 +38,7 @@
 .posting__buttons {
   border-top: 1px solid @input-range-color;
   padding: 40px 20px 30px;
+  text-align: center;
 }
 
 .posting__button {
@@ -77,5 +78,60 @@
 
   &:focus {
     border: 2px solid @input-range-color;
+  }
+}
+
+.posting__range--tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-display) {
+  .posting__filter {
+    padding-top: 0;
+
+    label {
+      background: url("/img/photo-road-tablet@1x.jpg") no-repeat center;
+      height: 400px;
+    }
+  }
+
+  .posting__range--mobile {
+    display: none;
+  }
+
+  .posting__range--tablet {
+    display: block;
+    margin: 23px auto 23px;
+    width: 200px;
+  }
+
+  .posting__buttons {
+    border-top: none;
+    padding: 57px 20px 0;
+  }
+
+  .posting__button {
+    margin: 17px 11px 8px;
+    width: 260px;
+  }
+}
+
+@media (min-width: @desktop-display) {
+  .posting {
+    width: 940px;
+  }
+
+  .posting__range {
+    width: 290px;
+  }
+
+  .posting__buttons {
+    padding: 131px 17px 0 0;
+    display: flex;
+  }
+
+  .posting__button {
+    width: 180px;
+    margin: 17px 47px 8px 0;
   }
 }

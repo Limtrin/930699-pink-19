@@ -19,3 +19,61 @@
     fill: @pink-color;
   }
 }
+
+@media (min-width: @tablet-display) {
+  .effects__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: -13px;
+  }
+
+  .effects__item {
+    display: flex;
+    align-items: inherit;
+    margin: 0;
+    padding: 10px 20px 10px 2px;
+    border-bottom: 1px solid #dddfe0;
+
+    svg {
+      width: 25px;
+      margin-right: 25px;
+
+      path {
+        background-color: @pink-color;
+      }
+    }
+  }
+
+  .effects__item--light {
+    svg {
+      width: 16px;
+      margin-right: 27px;
+      margin-left: 6px;
+
+      path {
+        fill: @pink-color;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-display) {
+  .effects__list {
+    align-items: flex-start;
+  }
+
+  .effects__item {
+    svg {
+      width: 50px;
+      margin-right: 45px;
+    }
+  }
+
+  .effects__item--light {
+    svg {
+      margin-left: 0;
+      margin-top: 8px;
+    }
+  }
+}
