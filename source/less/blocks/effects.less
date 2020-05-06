@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 18px 0;
+  padding: 40px 0 20px;
 }
 
 .effects__item {
@@ -18,6 +18,10 @@
   svg {
     fill: @pink-color;
   }
+}
+
+.effects__button {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media (min-width: @tablet-display) {
@@ -37,7 +41,6 @@
 
     svg {
       width: 25px;
-      margin-right: 25px;
 
       path {
         background-color: @pink-color;
@@ -48,13 +51,24 @@
   .effects__item--light {
     svg {
       width: 16px;
-      margin-right: 27px;
-      margin-left: 6px;
 
       path {
         fill: @pink-color;
       }
     }
+  }
+
+  .effects__item--color-icon {
+    fill: @pink-color;
+  }
+
+  .effects__button {
+    margin-right: 25px;
+  }
+
+  .effects__button--light {
+    margin-right: 27px;
+    margin-left: 6px;
   }
 }
 
@@ -66,14 +80,15 @@
   .effects__item {
     svg {
       width: 50px;
-      margin-right: 45px;
     }
   }
 
-  .effects__item--light {
-    svg {
-      margin-left: 0;
-      margin-top: 8px;
-    }
+  .effects__button {
+    margin-right: 45px;
+  }
+
+  .effects__button--light {
+    margin-left: 0;
+    margin-top: 8px;
   }
 }
