@@ -22,11 +22,6 @@
   text-align: center;
 }
 
-.photoes__image--tablet,
-.photoes__image--desktop {
-  display: none;
-}
-
 .photoes__overlay {
   position: absolute;
   right: 20px;
@@ -89,14 +84,6 @@
 }
 
 @media (min-width: @tablet-display) {
-  .photoes__image--mobile {
-    display: none;
-  }
-
-  .photoes__image--tablet {
-    display: inline-block;
-  }
-
   .photoes__intro {
     font-size: 18px;
     margin: 91px 0 76px;
@@ -167,17 +154,9 @@
 }
 
 @media (min-width: @desktop-display) {
-  .photoes__image--tablet {
-    display: none;
-  }
-
   .photoes__intro {
     margin: 91px 0 86px;
     padding: 0 300px;
-  }
-
-  .photoes__image--desktop {
-    display: inline-block;
   }
 
   .photoes__item--panaram-of-the-day {
