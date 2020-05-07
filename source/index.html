@@ -52,11 +52,15 @@
               <h3 class="main-title__title">Взгляните на жизнь иначе!</h3>
             </section>
 
-            <section class="first-screen__picture first-screen__picture--mobile">
+            <section class="first-screen__picture">
               <h2 class="visually-hidden">
                 Главная картинка страницы
               </h2>
-              <img class="main-picture__image" src="img/iphone-hand-mobile@1x.png" width="260" height="285">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                <img class="main-picture__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="iphone hand">
+              </picture>
             </section>
 
             <section class="download">
@@ -90,19 +94,6 @@
               </div>
             </section>
           </div>
-
-          <section class="first-screen__picture first-screen__picture--tablet">
-            <h2 class="visually-hidden">
-              Главная картинка страницы
-            </h2>
-            <img class="main-picture__image" src="img/iphone-hand-tablet@1x.png" width="auto" height="560">
-          </section>
-          <section class="first-screen__picture first-screen__picture--desktop">
-            <h2 class="visually-hidden">
-              Главная картинка страницы
-            </h2>
-            <img class="main-picture__image" src="img/iphone-hand-desktop@1x.png" width="auto" height="645">
-          </section>
         </div>
       </div>
     </div>
@@ -120,10 +111,10 @@
         <div class="container">
           <div class="wrapper">
             <div class="offer__content">
-              <img class="offer__picture offer__picture--tablet" src="img/iphone-screen-3-tablet@1x.png" width="268" height="547" >
+              <img class="offer__picture offer__picture--tablet" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" width="268" height="547" >
               <ul class="offer__list">
                 <li class="offer__item">
-                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" >
+                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" >
                   <div class="offer__info">
                     <h3 class="offer__title">
                       Поднимает настроение
@@ -134,7 +125,7 @@
                   </div>
                 </li>
                 <li class="offer__item">
-                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" >
+                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" >
                   <div class="offer__info">
                     <h3 class="offer__title">
                       Меняет мир вокруг
@@ -145,7 +136,7 @@
                   </div>
                 </li>
                 <li class="offer__item">
-                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" >
+                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" >
                   <div class="offer__info">
                     <h3 class="offer__title">
                       Заводит новых друзей
@@ -156,7 +147,7 @@
                   </div>
                 </li>
               </ul>
-              <img class="offer__picture offer__picture--mobile" src="img/iphone-screen-mobile@1x.png" width="165" height="320" >
+              <img class="offer__picture offer__picture--mobile" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="165" height="320" >
             </div>
           </div>
         </div>

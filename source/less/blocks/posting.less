@@ -10,6 +10,11 @@
     background: url("/img/photo-road-mobile@1x.jpg") no-repeat center;
     display: block;
     height: 374px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/photo-road-mobile@2x.jpg");
+      background-size: auto 374px;
+    }
   }
 }
 
@@ -93,6 +98,11 @@
     label {
       background: url("/img/photo-road-tablet@1x.jpg") no-repeat center;
       height: 400px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("/img/photo-road-tablet@2x.jpg");
+        background-size: auto 400px;
+      }
     }
   }
 
@@ -134,5 +144,17 @@
   .posting__button {
     width: 180px;
     margin: 17px 47px 8px 0;
+  }
+
+  .posting__filter {
+    label {
+      background: url("/img/photo-road-desktop@1x.jpg") no-repeat center;
+      height: 400px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("/img/photo-road-desktop@2x.jpg");
+        background-size: auto 400px;
+      }
+    }
   }
 }
