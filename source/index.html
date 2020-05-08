@@ -106,6 +106,14 @@
         <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
         <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
       </symbol>
+      <symbol id="icon-quotes" viewBox="0 0 78.672 63.789">
+        <g>
+          <path fill="#f2f2f2" d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
+        </g>
+        <g>
+          <path fill="#f2f2f2" d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
+        </g>
+      </symbol>
     </svg>
 
     <div class="first-screen">
@@ -163,6 +171,9 @@
                 Главная картинка страницы
               </h2>
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
                 <img class="main-picture__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x">
@@ -225,10 +236,16 @@
         <div class="container">
           <div class="wrapper">
             <div class="offer__content">
-              <img class="offer__picture offer__picture--tablet" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" width="268" height="547" >
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x" type="image/webp">
+                <img class="offer__picture offer__picture--tablet" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" width="268" height="547" >
+              </picture>
               <ul class="offer__list">
                 <li class="offer__item">
-                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" >
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x" type="image/webp">
+                    <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" >
+                  </picture>
                   <div class="offer__info">
                     <h3 class="offer__title">
                       Поднимает настроение
@@ -239,7 +256,10 @@
                   </div>
                 </li>
                 <li class="offer__item">
-                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" >
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x" type="image/webp">
+                    <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" >
+                  </picture>
                   <div class="offer__info">
                     <h3 class="offer__title">
                       Меняет мир вокруг
@@ -250,7 +270,10 @@
                   </div>
                 </li>
                 <li class="offer__item">
-                  <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" >
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x" type="image/webp">
+                    <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" >
+                  </picture>
                   <div class="offer__info">
                     <h3 class="offer__title">
                       Заводит новых друзей
@@ -261,7 +284,10 @@
                   </div>
                 </li>
               </ul>
-              <img class="offer__picture offer__picture--mobile" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="165" height="320" >
+              <picture>
+                <source srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x" type="image/webp">
+                <img class="offer__picture offer__picture--mobile" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="165" height="320" >
+              </picture>
             </div>
           </div>
         </div>
@@ -272,7 +298,10 @@
           <div class="wrapper">
             <div class="effect__content">
               <div class="effect__timer">
-                <img class="timer__picture" src="img/timer-24.png" width="238" height="276" >
+                <picture>
+                  <source srcset="img/timer-24.webp" type="image/webp">
+                  <img class="timer__picture" src="img/timer-24.png" width="238" height="276" >
+                </picture>
               </div>
               <div class="effect__info">
                 <h3 class="effect__title">
@@ -301,7 +330,9 @@
                 <use xlink:href="#icon-review-arrow-left"></use>
               </svg>
               <blockquote class="reviews__item  slider__item">
-                <img src="img/icon-quotes.svg" alt="ревью" class="reviews__quotes">
+                <svg class="reviews__quotes" width="79" height="64" aria-hidden="true">
+                  <use xlink:href="#icon-quotes"></use>
+                </svg>
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычне серые вещи! А ещё я познакомился со своей будущей женой в комментариях к приложенной фотографии!</p>
                 <p class="reviews__author-info">25 лет, водитель трамвая</p>
