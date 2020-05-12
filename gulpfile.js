@@ -96,7 +96,7 @@ gulp.task("html", function () {
 
 gulp.task("js", function() {
   return gulp
-    .src("source/js/*.js")
+    .src(["source/js/**/*.js", "source/js/*.js"])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(rename("main.min.js"))
