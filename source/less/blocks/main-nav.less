@@ -2,7 +2,6 @@
   float: right;
   width: 24px;
   height: 24px;
-  display: none;
 
   &:hover {
     cursor: pointer;
@@ -11,12 +10,10 @@
 
 .main-nav__toggle--close {
   background: url("../../img/icon-menu-cross.svg") no-repeat;
-  display: block;
 }
 
 .main-nav__toggle--gamburger {
   background: url("../../img/icon-menu-burger.svg") no-repeat;
-  display: block;
 }
 
 .main-nav__list {
@@ -26,5 +23,13 @@
 @media (min-width: @desktop-display) {
   .main-nav__list {
     display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
   }
 }
