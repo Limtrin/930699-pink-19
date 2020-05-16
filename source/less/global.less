@@ -14,21 +14,18 @@ a {
   text-decoration: none;
 }
 
+/*
 h1,
 h3,
 p {
   margin: 0;
 }
 
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 blockquote {
@@ -43,6 +40,20 @@ button {
     outline: none;
     border: 0;
   }
+}
+
+fieldset {
+  margin: 0;
+}
+
+picture {
+  z-index: 2;
+}
+*/
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -63,27 +74,19 @@ button {
 }
 
 .background-triangle {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  right: 1px;
+  background: url("/img/bg-triangle-white.svg") 100%;
+  background-size: cover;
 }
 
-.background-triangle--double {
-  top: -1px;
+.background-triangle-double {
+  background: url(/img/bg-triangle-white-footer.svg) no-repeat;
+  background-size: contain;
 }
 
-fieldset {
-  margin: 0;
-}
 
 @media (min-width: @tablet-display) {
   .container {
     width: @tablet-display;
-  }
-
-  .background-triangle {
-    right: 5px;
   }
 }
 

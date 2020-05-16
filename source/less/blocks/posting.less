@@ -19,15 +19,15 @@
 }
 
 .posting__range {
-  margin: 10px auto 35px;
+  margin: 10px auto 21px;
   display: block;
-  border-bottom: 1px solid @input-range-color;
-  appearance: none;
+  -webkit-appearance: none;
   border-radius: 2px;
+  padding: 0;
   width: 250px;
-  height: 2px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0);
   outline: none;
-  background-color: @dark-blue-color;
 
   &::-webkit-slider-thumb {
     appearance: none;
@@ -37,6 +37,54 @@
     border-radius: 100%;
     border: 2px solid @pink-color;
     cursor: pointer;
+    margin-top: -5px;
+
+    &:active {
+      background: @pink-color;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: @dark-blue-color;
+  }
+
+  &::-moz-range-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+    border: 2px solid @pink-color;
+    cursor: pointer;
+
+    &:active {
+      background: @pink-color;
+    }
+  }
+
+  &::-moz-range-track {
+    height: 2px;
+    background-color: @dark-blue-color;
+  }
+
+  &::-ms-thumb {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+    border: 2px solid @pink-color;
+    cursor: pointer;
+    position: absolute;
+
+    &:active {
+      background: @pink-color;
+    }
+  }
+
+  &::-ms-track {
+    height: 1px;
+    background-color: @dark-blue-color;
   }
 }
 
@@ -49,6 +97,7 @@
 .posting__button {
   margin-bottom: 14px;
   background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .posting__button--submit {

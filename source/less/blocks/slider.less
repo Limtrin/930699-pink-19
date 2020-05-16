@@ -2,16 +2,40 @@
   content: "";
   border: 3px solid @slider-dotes-color;
   border-radius: 100%;
+  display: block;
+
+  &:hover {
+    color: @dark-grey-color;
+  }
+
+  &:active {
+    color: @black-color-opacity;
+  }
 }
 
 .slider__nav {
   display: none;
+
+  &:hover {
+    fill: @dark-grey-color;
+  }
+
+  &:active {
+    fill: @black-color-opacity;
+  }
 }
 
 .slider__toggle {
   border-radius: 100%;
   margin: 0 7px;
   cursor: pointer;
+  border: none;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+    border: 0;
+  }
 }
 
 .slider__toggle--active {
@@ -32,6 +56,7 @@
   .slider__item {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 

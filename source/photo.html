@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+    <script>
+      document.createElement('picture');
+    </script>
+    <script src="js/main.min.js" async></script>
   </head>
   <body>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <div class="first-screen">
+    <div class="first-screen first-screen--not-main">
       <header class="page-header">
         <div class="container">
           <div class="page-header__content">
             <div class="page-header__top">
               <div class="wrapper">
-                <a class="page-header__logo">
+                <a href="index.html" class="page-header__logo">
                   <svg class="page-header__logo-image page-header__logo-image--mobile" width="75" height="22" fill="#ffffff" aria-hidden="true">
                     <use xlink:href="#logo-pink-white-mobile"></use>
                   </svg>
@@ -28,7 +38,7 @@
                     <use xlink:href="#logo-pink-white-desktop"></use>
                   </svg>
                 </a>
-                <button class="main-nav__toggle" type="button"></button>
+                <button class="main-nav__toggle main-nav__toggle--gamburger visually-hidden" type="button"></button>
               </div>
             </div>
             <nav class="main-nav">
@@ -43,7 +53,7 @@
                   <a href="form.html">Конкурс</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="#">HTML Academy</a>
+                  <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                 </li>
               </ul>
             </nav>
@@ -80,7 +90,7 @@
                 <source srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photoes__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x">
+                <img class="photoes__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama">
               </picture>
             </a>
           </div>
@@ -104,8 +114,8 @@
             </div>
           </div>
         </div>
-        <ul class="photoes__list container">
-          <li class="photoes__item">
+        <div class="photoes__list container">
+          <div class="photoes__item">
             <div class="photoes__picture">
               <a href="#">
                 <picture>
@@ -114,7 +124,7 @@
                   <source srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x">
+                  <img class="photoes__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="car">
                 </picture>
               </a>
             </div>
@@ -128,17 +138,17 @@
                   <p class="photoes__describtion">
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
-                  <div class="photoes__like like-block">
-                    <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                      <use xlink:href="#icon-heart"></use>
-                    </svg>
-                    <p class="like-block__likes">Нравится: <span class="like-block__count">356</span></p>
-                  </div>
                 </div>
               </div>
             </div>
-          </li>
-          <li class="photoes__item">
+            <div class="photoes__like like-block">
+              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <p class="like-block__likes">Нравится: <span class="like-block__count">356</span></p>
+            </div>
+          </div>
+          <div class="photoes__item">
             <div class="photoes__picture">
               <a href="#">
                 <picture>
@@ -147,7 +157,7 @@
                   <source srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x">
+                  <img class="photoes__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="drumset">
                 </picture>
               </a>
             </div>
@@ -161,17 +171,17 @@
                   <p class="photoes__describtion">
                     Соседи будут рады!
                   </p>
-                  <div class="photoes__like like-block">
-                    <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                      <use xlink:href="#icon-heart"></use>
-                    </svg>
-                    <p class="like-block__likes">Нравится: <span class="like-block__count">666</span></p>
-                  </div>
                 </div>
               </div>
             </div>
-          </li>
-          <li class="photoes__item">
+            <div class="photoes__like like-block">
+              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <p class="like-block__likes">Нравится: <span class="like-block__count">666</span></p>
+            </div>
+          </div>
+          <div class="photoes__item">
             <div class="photoes__picture">
               <a href="#">
                 <picture>
@@ -180,7 +190,7 @@
                   <source srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x">
+                  <img class="photoes__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="window">
                 </picture>
               </a>
             </div>
@@ -194,17 +204,17 @@
                   <p class="photoes__describtion">
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
-                  <div class="photoes__like like-block">
-                    <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                      <use xlink:href="#icon-heart"></use>
-                    </svg>
-                    <p class="like-block__likes">Нравится: <span class="like-block__count">215</span></p>
-                  </div>
                 </div>
               </div>
             </div>
-          </li>
-          <li class="photoes__item">
+            <div class="photoes__like like-block">
+              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <p class="like-block__likes">Нравится: <span class="like-block__count">215</span></p>
+            </div>
+          </div>
+          <div class="photoes__item">
             <div class="photoes__picture">
               <a href="#">
                 <picture>
@@ -213,7 +223,7 @@
                   <source srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x">
+                  <img class="photoes__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="fair">
                 </picture>
               </a>
             </div>
@@ -227,17 +237,17 @@
                   <p class="photoes__describtion">
                     Самая кубанская в мире!
                   </p>
-                  <div class="photoes__like like-block">
-                    <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                      <use xlink:href="#icon-heart"></use>
-                    </svg>
-                    <p class="like-block__likes">Нравится: <span class="like-block__count">4</span></p>
-                  </div>
                 </div>
               </div>
             </div>
-          </li>
-          <li class="photoes__item">
+            <div class="photoes__like like-block">
+              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <p class="like-block__likes">Нравится: <span class="like-block__count">4</span></p>
+            </div>
+          </div>
+          <div class="photoes__item">
             <div class="photoes__picture">
               <a href="#">
                 <picture>
@@ -246,7 +256,7 @@
                   <source srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x">
+                  <img class="photoes__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="pov">
                 </picture>
               </a>
             </div>
@@ -260,17 +270,17 @@
                   <p class="photoes__describtion">
                     Где снег-то?
                   </p>
-                  <div class="photoes__like like-block">
-                    <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                      <use xlink:href="#icon-heart"></use>
-                    </svg>
-                    <p class="like-block__likes">Нравится: <span class="like-block__count">150</span></p>
-                  </div>
                 </div>
               </div>
             </div>
-          </li>
-          <li class="photoes__item">
+            <div class="photoes__like like-block">
+              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <p class="like-block__likes">Нравится: <span class="like-block__count">150</span></p>
+            </div>
+          </div>
+          <div class="photoes__item">
             <div class="photoes__picture">
               <a href="#">
                 <picture>
@@ -279,7 +289,7 @@
                   <source srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x">
+                  <img class="photoes__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="wing">
                 </picture>
               </a>
             </div>
@@ -293,17 +303,17 @@
                   <p class="photoes__describtion">
                     Всем GM и взаимные лайки!
                   </p>
-                  <div class="photoes__like like-block">
-                    <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                      <use xlink:href="#icon-heart"></use>
-                    </svg>
-                    <p class="like-block__likes">Нравится: <span class="like-block__count">2560</span></p>
-                  </div>
                 </div>
               </div>
             </div>
-          </li>
-        </ul>
+            <div class="photoes__like like-block">
+              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <p class="like-block__likes">Нравится: <span class="like-block__count">2560</span></p>
+            </div>
+          </div>
+        </div>
         <p class="photoes__outro">
           Затмите их всех!<br> Выкладывайте всё, что накопилось в телефоне!
         </p>
@@ -324,28 +334,28 @@
             <div class="posting__effects effects">
               <ul class="effects__list">
                 <li class="effects__item effects__item--cut effects__item--active">
-                  <button class="effects__button">
+                  <button class="effects__button" type="button">
                     <svg width="48" height="48" aria-hidden="true">
                       <use xlink:href="#icon-editor-crop"></use>
                     </svg>
                   </button>
-                  <input type="range" id="range" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="80">
+                  <input type="range" id="range-crop" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="80">
                 </li>
                 <li class="effects__item effects__item--color">
-                  <button class="effects__button">
+                  <button class="effects__button" type="button">
                     <svg width="48" height="48" aria-hidden="true">
                       <use xlink:href="#icon-editor-fill"></use>
                     </svg>
                   </button>
-                  <input type="range" id="range" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="20">
+                  <input type="range" id="range-fill" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="20">
                 </li>
                 <li class="effects__item effects__item--light">
-                  <button class="effects__button effects__button--light">
+                  <button class="effects__button effects__button--light" type="button">
                     <svg width="32" height="32" aria-hidden="true">
                       <use xlink:href="#icon-editor-contrast"></use>
                     </svg>
                   </button>
-                  <input type="range" id="range" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="50">
+                  <input type="range" id="range-contrast" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="50">
                 </li>
               </ul>
             </div>
@@ -397,7 +407,7 @@
           </div>
           <div class="page-footer__develope develope">
             <p class="develope__title">Разработано</p>
-            <a href="#" class="develope__link">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="develope__link">
               <svg class="develope__img" width="27" height="34" fill="#d22856" aria-hidden="true">
                 <use xlink:href="#logo-htmlacademy"></use>
               </svg>
