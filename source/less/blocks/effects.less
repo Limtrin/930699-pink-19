@@ -3,6 +3,8 @@
   justify-content: center;
   align-items: center;
   padding: 40px 0 20px;
+  margin: 0;
+  list-style: none;
 }
 
 .effects__item {
@@ -21,7 +23,21 @@
 }
 
 .effects__button {
+  border: none;
+  padding: 0;
   background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+
+  &:hover {
+    svg {
+      fill: @middle-grey-color;
+    }
+  }
 }
 
 @media (min-width: @tablet-display) {
@@ -34,9 +50,9 @@
 
   .effects__item {
     display: flex;
-    align-items: inherit;
+    align-items: center;
     margin: 0;
-    padding: 10px 20px 10px 2px;
+    padding: 0 20px 5px 2px;
     border-bottom: 1px solid #dddfe0;
 
     svg {
@@ -64,6 +80,10 @@
 
   .effects__button {
     margin-right: 25px;
+
+    svg {
+      fill: @pink-color;
+    }
   }
 
   .effects__button--light {

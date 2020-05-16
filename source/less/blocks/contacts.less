@@ -11,9 +11,13 @@
 .contacts__text {
   font-size: 24px;
   font-weight: 300;
+  margin: 0;
 }
 
 .contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -29,8 +33,20 @@
   color: @pink-color;
   font-size: 24px;
   font-weight: 300;
+  display: block;
+  margin: 0;
 }
 
+.contacts__describe--link {
+  &:hover {
+    color: @dark-grey-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @black-color-opacity;
+  }
+}
 
 @media (min-width: @tablet-display) {
   .contacts__intro {

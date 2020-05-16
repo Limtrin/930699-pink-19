@@ -6,16 +6,17 @@
   text-align: center;
   font-size: 14px;
   line-height: 31px;
-  margin: 43px 0 49px;
+  margin: 43px 14px 49px;
 }
 
-.photoes__info {
+.photoes__item {
   background-color: @light-grey-color;
+  display: flex;
+  flex-direction: column;
 }
 
 .photoes__wrapper {
   padding: 18px 0 21px 18px;
-  margin-bottom: 24px;
 }
 
 .photoes__picture {
@@ -23,6 +24,7 @@
 }
 
 .photoes__overlay {
+  margin: 0;
   position: absolute;
   right: 20px;
   top: 0;
@@ -47,10 +49,13 @@
 .photoes__describtion {
   font-size: 14px;
   line-height: 25px;
+  overflow-wrap: anywhere;
+  margin: 0;
 }
 
 .photoes__like {
-  padding-top: 8px;
+  padding: 8px 0 21px 18px;
+  margin-top: auto;
 }
 
 .photoes__outro {
@@ -62,11 +67,16 @@
 
 .photoes__picture + .wrapper {
   margin-top: -5px;
+  padding: 0;
 }
 
 .photoes__item--panaram-of-the-day {
+  background-color: white;
+  margin-bottom: 21px;
+
   .photoes__info {
     margin: -5px 20px 0;
+    background-color: @light-grey-color;
   }
 
   .photoes__image {
@@ -77,10 +87,28 @@
     position: relative;
     height: auto;
   }
+
+  .photoes__like {
+    padding: 0;
+  }
+
+  .photoes__describtion {
+    padding-bottom: 5px;
+  }
 }
 
 .photoes__container--overlay {
   position: relative;
+}
+
+.photoes__item:not(.photoes__item--panaram-of-the-day) {
+  margin-bottom: 23px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .photoes__wrapper {
+    padding-bottom: 1px;
+  }
 }
 
 @media (min-width: @tablet-display) {
@@ -92,11 +120,11 @@
 
   .photoes__wrapper {
     padding: 27px 28px 23px 28px;
-    margin-bottom: 21px;
   }
 
   .photoes__item--panaram-of-the-day {
     width: 100%;
+    margin-bottom: 0;
 
     .photoes__wrapper {
       display: flex;
@@ -108,6 +136,8 @@
 
     .photoes__describtion {
       order: 3;
+      min-height: auto;
+      padding-bottom: 0;
     }
 
     .photoes__like {
@@ -120,6 +150,10 @@
     }
   }
 
+  .photoes__like {
+    padding: 0 28px 23px 28px;
+  }
+
   .photoes__list {
     display: flex;
     flex-wrap: wrap;
@@ -127,11 +161,15 @@
   }
 
   .photoes__item:not(.photoes__item--panaram-of-the-day) {
-    padding: 0 10px;
+    margin: 0 10px 21px;
 
     .photoes__info {
       width: 300px;
       margin: 0 auto;
+    }
+
+    .photoes__like {
+      padding-top: 14px;
     }
   }
 
@@ -140,7 +178,8 @@
   }
 
   .photoes__describtion {
-    height: 50px;
+    min-height: 50px;
+    overflow-wrap: anywhere;
   }
 
   .photoes__outro {
@@ -159,9 +198,13 @@
     padding: 0 300px;
   }
 
+  .photoes__item:not(.photoes__item--panaram-of-the-day) {
+    margin-bottom: 52px;
+  }
+
   .photoes__item--panaram-of-the-day {
     .photoes__wrapper {
-      padding-bottom: 2px;
+      padding-bottom: 23px;
     }
 
     .photoes__info {
@@ -171,10 +214,6 @@
 
   .photoes__overlay {
     top: 56px;
-  }
-
-  .photoes__wrapper {
-    margin-bottom: 52px;
   }
 
   .photoes__outro {

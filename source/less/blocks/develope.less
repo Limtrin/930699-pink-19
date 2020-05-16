@@ -1,6 +1,17 @@
 .develope__title {
+  margin: 0;
   padding-right: 15px;
   padding-top: 6px;
+}
+
+.develope__img {
+  &:hover {
+    fill: @dark-grey-color;
+  }
+
+  &:active {
+    fill: @black-color-opacity;
+  }
 }
 
 @media (min-width: @desktop-display) {
@@ -9,6 +20,6 @@
   }
 
   .develope__img {
-    padding-top: 9px;
+    padding-top: 5px;
   }
 }
