@@ -6,7 +6,7 @@ var pageHeaderTop = document.querySelector(".page-header__top");
 
 toggleBtn.classList.remove("visually-hidden");
 header.classList.add("visually-hidden");
-firstScreen.style.backgroundPosition = "50% 0";
+firstScreen.classList.remove("first-screen--no-js")
 pageHeader.style.background = "rgba(0, 0, 0, 0.3)";
 pageHeaderTop.style.borderBottom = "none";
 
@@ -16,12 +16,12 @@ toggleBtn.addEventListener("click", function () {
 
   if (toggleBtn.classList.contains("main-nav__toggle--gamburger")) {
     header.classList.add("visually-hidden");
-    firstScreen.style.backgroundPosition = "50% 0";
+    firstScreen.classList.remove("first-screen--no-js");
     pageHeader.style.background = "rgba(0, 0, 0, 0.3)";
     pageHeaderTop.style.borderBottom = "none";
   } else {
     header.classList.remove("visually-hidden");
-    firstScreen.style.backgroundPosition = "50% 50%";
+    firstScreen.classList.add("first-screen--no-js");
     pageHeader.style.background = "#283645";
     pageHeaderTop.style.borderBottom = "1px solid #000";
   }
