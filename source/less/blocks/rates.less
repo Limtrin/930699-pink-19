@@ -1,12 +1,10 @@
 .rates {
   background-color: @light-grey-color;
-  padding: 85px 0 47px;
+  padding: 92px 0 47px;
   overflow-x: hidden;
 }
 
 .rates__list {
-  background-color: white;
-  width: 276px;
   table-layout: auto;
   border: 2px solid @rates-border-color;
   border-collapse: collapse;
@@ -22,6 +20,8 @@
   font-size: 18px;
   text-transform: uppercase;
   padding: 20px;
+  border: 2px solid @rates-border-color;
+  position: relative;
 }
 
 .rates__price {
@@ -35,7 +35,7 @@
 
 .rates__overlay {
   position: absolute;
-  background: url("/img/bg-hit.svg");
+  background: url("../img/bg-hit.svg");
   z-index: 10;
   left: 0;
   top: 0;
@@ -58,6 +58,9 @@
   text-transform: uppercase;
   padding: 19px 21px;
   position: relative;
+  background-color: white;
+  box-sizing: border-box;
+  min-width: 276px;
 }
 
 .rates__check {
@@ -83,7 +86,6 @@
 
 .rates__wrapp {
   display: flex;
-  margin-right: 7px;
 }
 
 .rates__check--tablet {
@@ -101,6 +103,14 @@
   align-items: center;
 }
 
+.rates__title--hidden {
+  display: none;
+}
+
+.rates__value--hidden {
+  display: none;
+}
+
 @media (min-width: @tablet-display) {
   .rates {
     padding-bottom: 67px;
@@ -113,12 +123,10 @@
   }
 
   .rates__title--hidden {
+    display: table-cell;
     opacity: 0;
-  }
-
-  .rates__list {
-    min-width: 155px;
-    width: 155px;
+    border-top-color: transparent;
+    border-left-color: transparent;
   }
 
   .rates__characteristic {
@@ -129,6 +137,12 @@
     text-transform: none;
     padding: 8px 15px;
     text-align: center;
+    min-width: 155px;
+  }
+
+  .rates__value--hidden {
+    display: table-cell;
+    text-align: left;
   }
 
   .rates__check {
@@ -137,7 +151,6 @@
   }
 
   .rates__list--tablet {
-    display: inline-table;
     margin-top: 84px;
 
     .rates__value {
@@ -172,14 +185,10 @@
     padding: 156px 0 92px;
   }
 
-  .rates__list {
-    min-width: 236px;
-    width: 236px;
-  }
-
   .rates__value {
     font-size: 18px;
     padding: 15px;
+    min-width: 236px;
   }
 
   .rates__title {

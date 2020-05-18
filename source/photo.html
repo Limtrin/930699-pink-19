@@ -64,266 +64,292 @@
         <h2 class="visually-hidden">
           Главная картинка страницы
         </h2>
-        <h1 class="main-title__title main-title__title--not-main main-title__title--photo">Фотографии<br> пользователей</h1>
+        <h1 class="main-title__title main-title__title--not-main main-title__title--photo">Фотографии пользователей</h1>
       </section>
     </div>
 
     <main class="page-main">
-      <section class="photoes">
+      <section class="photos">
         <h2 class="visually-hidden">
           Фотографии пользователей
         </h2>
         <div class="wrapper">
-          <p class="photoes__intro">
+          <p class="photos__intro">
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </div>
-        <div class="photoes__item photoes__item--panaram-of-the-day">
-          <div class="photoes__picture">
-            <div class="container photoes__container--overlay">
-              <p class="photoes__overlay">Панорама дня</p>
+        <div class="photos__item photos__item--panaram-of-the-day">
+          <div class="photos__picture">
+            <div class="container photos__container">
+              <p class="photos__overlay">Панорама дня</p>
             </div>
             <a href="#">
               <picture>
-                <source srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                <source srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
                 <source srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
                 <source srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photoes__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama">
+                <img class="photos__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama">
               </picture>
             </a>
           </div>
           <div class="container">
-            <div class="photoes__info">
-              <div class="photoes__wrapper">
-                <b class="photoes__name">
+            <div class="photos__info">
+              <div class="photos__wrapper">
+                <b class="photos__name">
                   Анна
-                  <span class="photoes__time">(5 минут назад)</span>
+                  <span class="photos__time">(5 минут назад)</span>
                 </b>
-                <p class="photoes__describtion">
+                <p class="photos__describtion">
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
-                <div class="photoes__like like-block">
-                  <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                    <use xlink:href="#icon-heart"></use>
-                  </svg>
+                <div class="photos__like like-block">
+                  <button class="like-block__toggle">
+                    <svg class="like-block__icon" width="13" height="12" aria-hidden="true">
+                      <use xlink:href="#icon-heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
                   <p class="like-block__likes">Нравится: <span class="like-block__count">215</span></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="photoes__list container">
-          <div class="photoes__item">
-            <div class="photoes__picture">
+        <div class="photos__list container">
+          <div class="photos__item">
+            <div class="photos__picture">
               <a href="#">
                 <picture>
-                  <source srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
                   <source srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
                   <source srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="car">
+                  <img class="photos__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="car">
                 </picture>
               </a>
             </div>
             <div class="wrapper">
-              <div class="photoes__info">
-                <div class="photoes__wrapper">
-                  <b class="photoes__name">
+              <div class="photos__info">
+                <div class="photos__wrapper">
+                  <b class="photos__name">
                     Левон
-                    <span class="photoes__time">(5 часов назад)</span>
+                    <span class="photos__time">(5 часов назад)</span>
                   </b>
-                  <p class="photoes__describtion">
+                  <p class="photos__describtion">
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="photoes__like like-block">
-              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
+            <div class="photos__like like-block">
+              <button class="like-block__toggle">
+                <svg class="like-block__icon" width="13" height="12" aria-hidden="true">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
               <p class="like-block__likes">Нравится: <span class="like-block__count">356</span></p>
             </div>
           </div>
-          <div class="photoes__item">
-            <div class="photoes__picture">
+          <div class="photos__item">
+            <div class="photos__picture">
               <a href="#">
                 <picture>
-                  <source srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
                   <source srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
                   <source srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="drumset">
+                  <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="drumset">
                 </picture>
               </a>
             </div>
             <div class="wrapper">
-              <div class="photoes__info">
-                <div class="photoes__wrapper">
-                  <b class="photoes__name">
+              <div class="photos__info">
+                <div class="photos__wrapper">
+                  <b class="photos__name">
                     Антон
-                    <span class="photoes__time">(12 часов назад)</span>
+                    <span class="photos__time">(12 часов назад)</span>
                   </b>
-                  <p class="photoes__describtion">
+                  <p class="photos__describtion">
                     Соседи будут рады!
                   </p>
                 </div>
               </div>
             </div>
-            <div class="photoes__like like-block">
-              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
+            <div class="photos__like like-block">
+              <button class="like-block__toggle">
+                <svg class="like-block__icon" width="13" height="12" aria-hidden="true">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
               <p class="like-block__likes">Нравится: <span class="like-block__count">666</span></p>
             </div>
           </div>
-          <div class="photoes__item">
-            <div class="photoes__picture">
+          <div class="photos__item">
+            <div class="photos__picture">
               <a href="#">
                 <picture>
-                  <source srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
                   <source srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
                   <source srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="window">
+                  <img class="photos__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="window">
                 </picture>
               </a>
             </div>
             <div class="wrapper">
-              <div class="photoes__info">
-                <div class="photoes__wrapper">
-                  <b class="photoes__name">
+              <div class="photos__info">
+                <div class="photos__wrapper">
+                  <b class="photos__name">
                     Борис
-                    <span class="photoes__time">(20 часов назад)</span>
+                    <span class="photos__time">(20 часов назад)</span>
                   </b>
-                  <p class="photoes__describtion">
+                  <p class="photos__describtion">
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="photoes__like like-block">
-              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
+            <div class="photos__like like-block">
+              <button class="like-block__toggle">
+                <svg class="like-block__icon" width="13" height="12" aria-hidden="true">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
               <p class="like-block__likes">Нравится: <span class="like-block__count">215</span></p>
             </div>
           </div>
-          <div class="photoes__item">
-            <div class="photoes__picture">
+          <div class="photos__item">
+            <div class="photos__picture">
               <a href="#">
                 <picture>
-                  <source srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
                   <source srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
                   <source srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="fair">
+                  <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="fair">
                 </picture>
               </a>
             </div>
             <div class="wrapper">
-              <div class="photoes__info">
-                <div class="photoes__wrapper">
-                  <b class="photoes__name">
+              <div class="photos__info">
+                <div class="photos__wrapper">
+                  <b class="photos__name">
                     Сергей
-                    <span class="photoes__time">(20 часов назад)</span>
+                    <span class="photos__time">(20 часов назад)</span>
                   </b>
-                  <p class="photoes__describtion">
+                  <p class="photos__describtion">
                     Самая кубанская в мире!
                   </p>
                 </div>
               </div>
             </div>
-            <div class="photoes__like like-block">
-              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
+            <div class="photos__like like-block">
+              <button class="like-block__toggle">
+                <svg class="like-block__icon" width="13" height="12" aria-hidden="true">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
               <p class="like-block__likes">Нравится: <span class="like-block__count">4</span></p>
             </div>
           </div>
-          <div class="photoes__item">
-            <div class="photoes__picture">
+          <div class="photos__item">
+            <div class="photos__picture">
               <a href="#">
                 <picture>
-                  <source srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
                   <source srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
                   <source srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="pov">
+                  <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="pov">
                 </picture>
               </a>
             </div>
             <div class="wrapper">
-              <div class="photoes__info">
-                <div class="photoes__wrapper">
-                  <b class="photoes__name">
+              <div class="photos__info">
+                <div class="photos__wrapper">
+                  <b class="photos__name">
                     Максим
-                    <span class="photoes__time">(20 часов назад)</span>
+                    <span class="photos__time">(20 часов назад)</span>
                   </b>
-                  <p class="photoes__describtion">
+                  <p class="photos__describtion">
                     Где снег-то?
                   </p>
                 </div>
               </div>
             </div>
-            <div class="photoes__like like-block">
-              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
+            <div class="photos__like like-block">
+              <button class="like-block__toggle">
+                <svg class="like-block__icon" width="13" height="12" aria-hidden="true">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
               <p class="like-block__likes">Нравится: <span class="like-block__count">150</span></p>
             </div>
           </div>
-          <div class="photoes__item">
-            <div class="photoes__picture">
+          <div class="photos__item">
+            <div class="photos__picture">
               <a href="#">
                 <picture>
-                  <source srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
                   <source srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
                   <source srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                  <img class="photoes__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="wing">
+                  <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="wing">
                 </picture>
               </a>
             </div>
             <div class="wrapper">
-              <div class="photoes__info">
-                <div class="photoes__wrapper">
-                  <b class="photoes__name">
+              <div class="photos__info">
+                <div class="photos__wrapper">
+                  <b class="photos__name">
                     Надежда
-                    <span class="photoes__time">(20 часов назад)</span>
+                    <span class="photos__time">(20 часов назад)</span>
                   </b>
-                  <p class="photoes__describtion">
+                  <p class="photos__describtion">
                     Всем GM и взаимные лайки!
                   </p>
                 </div>
               </div>
             </div>
-            <div class="photoes__like like-block">
-              <svg class="like-block__toggle" width="13" height="12" aria-hidden="true">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
+            <div class="photos__like like-block">
+              <button class="like-block__toggle">
+                <svg class="like-block__icon" width="13" height="12" aria-hidden="true">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
               <p class="like-block__likes">Нравится: <span class="like-block__count">2560</span></p>
             </div>
           </div>
         </div>
-        <p class="photoes__outro">
-          Затмите их всех!<br> Выкладывайте всё, что накопилось в телефоне!
-        </p>
+        <div class="photos__outro">
+          <p class="photos__text">
+            Затмите их всех!
+          </p>
+          <p class="photos__text">
+            Выкладывайте всё, что накопилось в телефоне!
+          </p>
+        </div>
       </section>
 
       <section class="posting container">
         <h2 class="visually-hidden">
           Добавление собственной фотографии
         </h2>
-        <form action="https://echo.htmlacademy.ru" class="form__posting form">
+        <form action="https://echo.htmlacademy.ru" class="posting__form form">
           <div class="wrapper">
             <div class="posting__filter">
               <input id="uload-user-img" class="visually-hidden" type="file">
@@ -338,6 +364,7 @@
                     <svg width="48" height="48" aria-hidden="true">
                       <use xlink:href="#icon-editor-crop"></use>
                     </svg>
+                    <span class="visually-hidden">Обрезка фотографии</span>
                   </button>
                   <input type="range" id="range-crop" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="80">
                 </li>
@@ -346,6 +373,7 @@
                     <svg width="48" height="48" aria-hidden="true">
                       <use xlink:href="#icon-editor-fill"></use>
                     </svg>
+                    <span class="visually-hidden">Заливка фотографии</span>
                   </button>
                   <input type="range" id="range-fill" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="20">
                 </li>
@@ -354,6 +382,7 @@
                     <svg width="32" height="32" aria-hidden="true">
                       <use xlink:href="#icon-editor-contrast"></use>
                     </svg>
+                    <span class="visually-hidden">Инверсия фотографии</span>
                   </button>
                   <input type="range" id="range-contrast" name="range" class="posting__range posting__range--tablet" min="1" max="100" value="50">
                 </li>
@@ -373,44 +402,50 @@
       <div class="container">
         <div class="wrapper page-footer__wrapp">
           <div class="logo page-footer__logo">
-            <svg class="footer__image footer__image--mobile" width="147" height="40" aria-hidden="true">
-              <use xlink:href="#logo-pink-blue-mobile"></use>
-            </svg>
-            <svg class="footer__image footer__image--desktop" width="147" height="40" aria-hidden="true">
-              <use xlink:href="#logo-pink-blue-desktop"></use>
-            </svg>
+            <a href="index.html" class="page-footer__link">
+              <svg class="page-footer__image page-footer__image--mobile" width="147" height="40" aria-hidden="true">
+                <use xlink:href="#logo-pink-blue-mobile"></use>
+              </svg>
+              <svg class="page-footer__image page-footer__image--desktop" width="147" height="40" aria-hidden="true">
+                <use xlink:href="#logo-pink-blue-desktop"></use>
+              </svg>
+            </a>
           </div>
           <div class="page-footer__socials social">
             <ul class="social__list">
               <li class="social__item social__item--twitter">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--twitter"  width="18px" height="15px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--twitter"  width="18px" height="15px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Твиттере</span>
                 </a>
               </li>
               <li class="social__item social__item--facebook">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--facebook" width="9px" height="20px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--facebook" width="9px" height="20px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item social__item--youtube">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--youtube" width="15px" height="14px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--youtube" width="15px" height="14px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-youtube"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Ютубе</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__develope develope">
-            <p class="develope__title">Разработано</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="develope__link">
-              <svg class="develope__img" width="27" height="34" fill="#d22856" aria-hidden="true">
+          <div class="page-footer__develop develop">
+            <p class="develop__title">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">
+              <svg class="develop__img" width="27" height="34" fill="#d22856" aria-hidden="true">
                 <use xlink:href="#logo-htmlacademy"></use>
               </svg>
+              <span class="visually-hidden">На страницу HTML Акадекмии</span>
             </a>
           </div>
         </div>

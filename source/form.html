@@ -75,8 +75,8 @@
         </h2>
         <div class="wrapper">
           <p class="form-block__intro">
-            Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-            <span class="form-block__intro--tablet">Пожалуйста, заполните форму ниже:</span>
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="form-block__add">Пожалуйста, заполните форму ниже:</span>
           </p>
         </div>
         <form action="https://echo.htmlacademy.ru" class="form-block__form form">
@@ -98,7 +98,7 @@
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
             <p class="form__intro">Ваши безбашенные достижения в путешествии</p>
             <div class="form__flex-container">
-              <div class="form__item">
+              <div class="form__item form__item--shark">
                 <input id="checkbox_1" class="form__checkbox" type="checkbox" name="achievement" value="Селфи с акулой" checked>
                 <label for="checkbox_1" class="form__title">
                   <span class="form__title-text">
@@ -106,7 +106,7 @@
                   </span>
                 </label>
               </div>
-              <div class="form__item">
+              <div class="form__item form__item--sunburn">
                 <input id="checkbox_2" class="form__checkbox" type="checkbox" name="achievement" value="Обгореть на пляже" checked>
                 <label for="checkbox_2" class="form__title">
                   <span class="form__title-text">
@@ -114,7 +114,7 @@
                   </span>
                 </label>
               </div>
-              <div class="form__item">
+              <div class="form__item form__item--norris">
                 <input id="checkbox_3" class="form__checkbox" type="checkbox" name="achievement" value="Чак Норрис">
                 <label for="checkbox_3" class="form__title">
                   <span class="form__title-text">
@@ -122,7 +122,7 @@
                   </span>
                 </label>
               </div>
-              <div class="form__item">
+              <div class="form__item form__item--souvenir">
                 <input id="checkbox_4" class="form__checkbox" type="checkbox" name="achievement" value="Сувениры">
                 <label for="checkbox_4" class="form__title">
                   <span class="form__title-text">
@@ -130,7 +130,7 @@
                   </span>
                 </label>
               </div>
-              <div class="form__item">
+              <div class="form__item form__item--tower">
                 <input id="checkbox_5" class="form__checkbox" type="checkbox" name="achievement" value="Башня" checked>
                 <label for="checkbox_5" class="form__title">
                   <span class="form__title-text">
@@ -138,7 +138,7 @@
                   </span>
                 </label>
               </div>
-              <div class="form__item">
+              <div class="form__item form__item--hotel">
                 <input id="checkbox_6" class="form__checkbox" type="checkbox" name="achievement" value="Разгром отеля">
                 <label for="checkbox_6" class="form__title">
                   <span class="form__title-text">
@@ -207,7 +207,7 @@
           <fieldset class="form__fieldset form__fieldset--sending">
             <div class="form__flex-container">
               <button type="submit" class="form__submit" value="Отправить">Отправить форму</button>
-              <p class="form__essentials"><span>*</span> - Обязательные<span class="form__essentials--hidden"> для заполнения</span> поля</p>
+              <p class="form__essentials"><span>*</span> — Обязательные<span class="form__essentials--hidden"> для заполнения</span> поля</p>
             </div>
           </fieldset>
         </form>
@@ -218,44 +218,50 @@
       <div class="container">
         <div class="wrapper page-footer__wrapp">
           <div class="logo page-footer__logo">
-            <svg class="footer__image footer__image--mobile" width="147" height="40" aria-hidden="true">
-              <use xlink:href="#logo-pink-blue-mobile"></use>
-            </svg>
-            <svg class="footer__image footer__image--desktop" width="147" height="40" aria-hidden="true">
-              <use xlink:href="#logo-pink-blue-desktop"></use>
-            </svg>
+            <a href="index.html" class="page-footer__link">
+              <svg class="page-footer__image page-footer__image--mobile" width="147" height="40" aria-hidden="true">
+                <use xlink:href="#logo-pink-blue-mobile"></use>
+              </svg>
+              <svg class="page-footer__image page-footer__image--desktop" width="147" height="40" aria-hidden="true">
+                <use xlink:href="#logo-pink-blue-desktop"></use>
+              </svg>
+            </a>
           </div>
           <div class="page-footer__socials social">
             <ul class="social__list">
               <li class="social__item social__item--twitter">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--twitter"  width="18px" height="15px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--twitter"  width="18px" height="15px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Твиттере</span>
                 </a>
               </li>
               <li class="social__item social__item--facebook">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--facebook" width="9px" height="20px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--facebook" width="9px" height="20px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item social__item--youtube">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--youtube" width="15px" height="14px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--youtube" width="15px" height="14px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-youtube"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Ютубе</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__develope develope">
-            <p class="develope__title">Разработано</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="develope__link">
-              <svg class="develope__img" width="27" height="34" fill="#d22856" aria-hidden="true">
+          <div class="page-footer__develop develop">
+            <p class="develop__title">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">
+              <svg class="develop__img" width="27" height="34" fill="#d22856" aria-hidden="true">
                 <use xlink:href="#logo-htmlacademy"></use>
               </svg>
+              <span class="visually-hidden">На страницу HTML Акадекмии</span>
             </a>
           </div>
         </div>

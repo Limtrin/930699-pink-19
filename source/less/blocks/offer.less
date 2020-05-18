@@ -1,7 +1,6 @@
 .offer {
   background-color: @light-grey-color;
   text-align: center;
-  max-height: 1000px;
   overflow: hidden;
 }
 
@@ -60,14 +59,18 @@
 }
 
 @media (min-width: @tablet-display) {
+  .offer__pictire-select {
+    margin-top: auto;
+  }
+
   .offer__intro {
     padding-top: 45px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
   }
 
   .offer__text {
     font-size: 40px;
-    padding-bottom: 5px;
+    padding-bottom: 0;
     line-height: 50px;
 
     &:last-child {
@@ -93,6 +96,7 @@
   .offer__picture--tablet {
     display: block;
     z-index: 2;
+    margin-top: auto;
   }
 
   .offer__content {
@@ -104,7 +108,7 @@
 @media (min-width: @desktop-display) {
   .offer__text {
     font-size: 50px;
-    line-height: 54px;
+    line-height: 57px;
 
     &:last-child {
       width: 430px;
@@ -131,6 +135,7 @@
     width: 100%;
     justify-content: space-around;
     z-index: 2;
+    flex-wrap: wrap;
   }
 
   .offer__content {

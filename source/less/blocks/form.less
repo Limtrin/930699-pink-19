@@ -53,6 +53,7 @@
 }
 
 .form__fieldset--archivements {
+  padding-bottom: 0;
   background-color: @light-grey-color;
 
   .form__item {
@@ -90,12 +91,32 @@
 .form__checkbox {
   margin-right: -15px;
   margin-left: 0;
+
+  &:hover + .form__title::before,
+  &:focus + .form__title::before {
+    border-color: @dark-blue-color;
+  }
+
+  &:active + .form__title::before {
+    border-color: @pink-color;
+  }
+}
+
+.form__radio {
+  &:hover + .form__title::before,
+  &:focus + .form__title::before {
+    border-color: @dark-blue-color;
+  }
+
+  &:active + .form__title::before {
+    border-color: @pink-color;
+  }
 }
 
 .form__item {
   display: flex;
   align-items: center;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
 }
 
 .form__item--radio {
@@ -113,25 +134,13 @@
   top: -7px;
 }
 
-.form__title:hover::before {
-  border: 2px solid @dark-blue-color;
-}
-
-.form__title:active::before {
-  border: 2px solid @pink-color;
-}
-
-.form__title:focus::before {
-  border: 2px solid @pink-color;
-}
-
 .form__checkbox:checked ~ .form__title::before {
-  background: url("/img/icon-checked.svg") white no-repeat center;
+  background: url("../img/icon-checked.svg") white no-repeat center;
 }
 
 .form__fieldset--address {
   background-color: white;
-  padding-top: 24px;
+  padding-top: 37px;
   padding-bottom: 20px;
 
   .form__label {
@@ -166,7 +175,7 @@
 }
 
 .form__radio:checked ~ .form__title::before {
-  background: url("/img/icon-map-marker.svg") white no-repeat center;
+  background: url("../img/icon-map-marker.svg") white no-repeat center;
 }
 
 .form__legend--emo {
@@ -224,6 +233,10 @@
     outline: none;
     border: 0;
   }
+
+  &:disabled {
+    background-color: @light-grey-color;
+  }
 }
 
 .form__essentials {
@@ -242,7 +255,7 @@
   }
 }
 
-.form-block__intro--tablet {
+.form-block__add {
   display: none;
 }
 
@@ -255,7 +268,7 @@
 }
 
 .form__title--radio {
-  margin-left: -16px;
+  margin-left: -18px;
 }
 
 @media (min-width: @tablet-display) {
@@ -283,7 +296,7 @@
     flex-direction: column;
   }
 
-  .form-block__intro--tablet {
+  .form-block__add {
     display: block;
   }
 
@@ -320,7 +333,7 @@
     border: 2px solid @rates-border-color;
     border-radius: 4px;
     margin: 0 20px;
-    padding: 12px 58px 0;
+    padding: 12px 58px 9px;
 
     .form__legend {
       display: block;
@@ -436,6 +449,7 @@
 
   .form__item--radio {
     margin-left: 40px;
+    margin-bottom: 45px;
   }
 
   .form-block__form {
@@ -444,7 +458,7 @@
     justify-content: space-between;
   }
 
-  .form-block__intro--tablet {
+  .form-block__add {
     display: inline;
   }
 
@@ -493,23 +507,28 @@
   .form__fieldset--archivements {
     width: 100%;
     margin: 0 10px;
+    padding: 12px 0 8px 58px;
 
     .form__flex-container {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 178px;
+      flex-flow: wrap;
+      justify-content: space-between;
+      margin-top: 5px;
     }
 
-    .form__title {
-      width: 270px;
-      margin-right: 35px;
+    .form__title-text {
+      margin-left: 60px;
+    }
+
+    .form__item {
+      margin-left: 0;
+      width: 30%;
     }
   }
 
   .form__fieldset--emo {
     width: 100%;
-    margin: 26px 10px;
+    margin: 26px 10px 30px;
 
     .form__textarea {
       height: 120px;
@@ -528,5 +547,29 @@
 
   .form__essentials--hidden {
     display: inline;
+  }
+
+  .form__item--shark {
+    order: 1;
+  }
+
+  .form__item--sunburn {
+    order: 4;
+  }
+
+  .form__item--norris {
+    order: 2;
+  }
+
+  .form__item--souvenir {
+    order: 5;
+  }
+
+  .form__item--tower {
+    order: 3;
+  }
+
+  .form__item--hotel {
+    order: 6;
   }
 }

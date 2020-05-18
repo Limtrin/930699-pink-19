@@ -76,12 +76,12 @@
                 Главная картинка страницы
               </h2>
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-                <img class="main-picture__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="iphone-hand">
+                <img class="first-screen__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="iphone-hand">
               </picture>
             </section>
 
@@ -99,6 +99,7 @@
                       <svg class="dowload__picture" width="47" height="56" aria-hidden="true">
                         <use xlink:href="#logo-apple"></use>
                       </svg>
+                      <span class="visually-hidden">Скачать приложение для IOS</span>
                     </a>
                   </li>
                   <li class="download__item download__item--android">
@@ -106,6 +107,7 @@
                       <svg class="dowload__picture" width="43" height="47" aria-hidden="true">
                         <use xlink:href="#logo-android"></use>
                       </svg>
+                      <span class="visually-hidden">Скачать приложение для Android</span>
                     </a>
                   </li>
                   <li class="download__item download__item--windows">
@@ -113,6 +115,7 @@
                       <svg class="dowload__picture" width="44" height="41" aria-hidden="true">
                         <use xlink:href="#logo-microsoft"></use>
                       </svg>
+                      <span class="visually-hidden">Скачать приложение для Windows</span>
                     </a>
                   </li>
                 </ul>
@@ -139,14 +142,14 @@
           <div class="container">
             <div class="wrapper">
               <div class="offer__content">
-                <picture>
+                <picture class="offer__pictire-select">
                   <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x" type="image/webp">
                   <img class="offer__picture offer__picture--tablet" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" width="550" height="547" alt="iphone-screen">
                 </picture>
                 <ul class="offer__list">
                   <li class="offer__item">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x" type="image/webp">
                       <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="iphone-screen">
                     </picture>
                     <div class="offer__info">
@@ -160,7 +163,7 @@
                   </li>
                   <li class="offer__item">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x" type="image/webp">
                       <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="iphone-screen">
                     </picture>
                     <div class="offer__info">
@@ -174,7 +177,7 @@
                   </li>
                   <li class="offer__item">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x" type="image/webp">
                       <img class="offer__picture offer__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="iphone-screen">
                     </picture>
                     <div class="offer__info">
@@ -204,12 +207,13 @@
               <div class="effect__timer">
                 <picture>
                   <source srcset="img/timer-24.webp" type="image/webp">
-                  <img class="timer__picture" src="img/timer-24.png" width="238" height="276" alt="timer">
+                  <img class="effect__picture" src="img/timer-24.png" width="238" height="276" alt="timer">
                 </picture>
               </div>
               <div class="effect__info">
                 <h3 class="effect__title">
-                  Эффект на 24 часа!
+                  Эффект
+                  <span class="effect__hours">на 24 часа!</span>
                 </h3>
                 <p class="effect__text">
                   Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится  целые сутки!
@@ -230,9 +234,11 @@
         <div class="container">
           <div class="reviews__wrapper slider">
             <div class="reviews__list  slider__list">
-              <svg class="slider__nav slider__nav--left" width="50" height="50" fill="#bec2c7" aria-hidden="true">
-                <use xlink:href="#icon-review-arrow-left"></use>
-              </svg>
+              <a href="#" class="slider__link">
+                <svg class="slider__nav slider__nav--left" width="50" height="50" fill="#bec2c7" aria-hidden="true">
+                  <use xlink:href="#icon-review-arrow-left"></use>
+                </svg>
+              </a>
               <blockquote class="reviews__item  slider__item">
                 <svg class="reviews__quotes" width="79" height="64" aria-hidden="true">
                   <use xlink:href="#icon-quotes"></use>
@@ -241,9 +247,11 @@
                 <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычне серые вещи! А ещё я познакомился со своей будущей женой в комментариях к приложенной фотографии!</p>
                 <p class="reviews__author-info">25 лет, водитель трамвая</p>
               </blockquote>
-              <svg class="slider__nav slider__nav--right" width="50" height="50" fill="#bec2c7" aria-hidden="true">
-                <use xlink:href="#icon-review-arrow-right"></use>
-              </svg>
+              <a href="#" class="slider__link">
+                <svg class="slider__nav slider__nav--right" width="50" height="50" fill="#bec2c7" aria-hidden="true">
+                  <use xlink:href="#icon-review-arrow-right"></use>
+                </svg>
+              </a>
             </div>
             <p class="reviews__toggles slider__toggles">
               <button class="slider__toggle slider__toggle--active" type="button"><span class="slider__dotes"></span></button>
@@ -258,155 +266,133 @@
         <h2 class="visually-hidden">
           Тарифы подписки
         </h2>
-        <div class="container rates__container">
+        <div class="container rates__container slider">
           <div class="rates__wrapp">
-            <table class="rates__list rates__list--tablet">
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  Розовый фильтр
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  Смайлики
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  Комментарии
-                </td>
-              </tr>
-            </table>
             <table class="rates__list">
-              <tr class="rates__header">
-                <th class="rates__title">
-                  База
-                  <div class="rates__price">
-                    1,99 USD
-                  </div>
-                </th>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
+              <thead class="rates__header">
+                <tr>
+                  <th class="rates__title rates__title--hidden">
+                  </th>
+                  <th class="rates__title">
+                    База
+                    <div class="rates__price">
+                      1,99 USD
+                    </div>
+                  </th>
+                  <th class="rates__title">
+                    Стандарт
+                    <div class="rates__price">
+                      3,99 USD
+                    </div>
+                    <div class="rates__overlay">
+                      <span class="rates__hit">ХИТ</span>
+                    </div>
+                  </th>
+                  <th class="rates__title">
+                    Анлим
+                    <div class="rates__price">
+                      9,99 USD
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="rates__body">
+                <tr>
+                  <td class="rates__value rates__value--hidden">
                     Розовый фильтр
-                  </div>
-                  <svg class="rates__check rates__check--yes" width="33.7" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Розовый фильтр
+                    </div>
+                    <svg class="rates__check rates__check--yes" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Розовый фильтр
+                    </div>
+                    <svg class="rates__check rates__check--yes" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Розовый фильтр
+                    </div>
+                    <svg class="rates__check rates__check--yes" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rates__value rates__value--hidden">
                     Смайлики
-                  </div>
-                  <svg class="rates__check rates__check--no" width="25" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-no"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Смайлики
+                    </div>
+                    <svg class="rates__check rates__check--no" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Смайлики
+                    </div>
+                    <svg class="rates__check rates__check--yes" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Смайлики
+                    </div>
+                    <svg class="rates__check rates__check--yes" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rates__value rates__value--hidden">
                     Комментарии
-                  </div>
-                  <svg class="rates__check rates__check--no" width="25" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-no"></use>
-                  </svg>
-                </td>
-              </tr>
-            </table>
-            <table class="rates__list">
-              <tr class="rates__header">
-                <th class="rates__title">
-                  Стандарт
-                  <div class="rates__price">
-                    3,99 USD
-                  </div>
-                  <div class="rates__overlay">
-                    <span class="rates__hit">ХИТ</span>
-                  </div>
-                </th>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
-                    Розовый фильтр
-                  </div>
-                  <svg class="rates__check rates__check--yes" width="33.7" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
-                    Смайлики
-                  </div>
-                  <svg class="rates__check rates__check--yes" width="33.7" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
-                    Комментарии
-                  </div>
-                  <svg class="rates__check rates__check--no" width="25" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-no"></use>
-                  </svg>
-                </td>
-              </tr>
-            </table>
-            <table class="rates__list">
-              <tr class="rates__header">
-                <th class="rates__title">
-                  Анлим
-                  <div class="rates__price">
-                    9,99 USD
-                  </div>
-                </th>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
-                    Розовый фильтр
-                  </div>
-                  <svg class="rates__check rates__check--yes" width="33.7" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
-                    Смайлики
-                  </div>
-                  <svg class="rates__check rates__check--yes" width="33.7" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr class="rates__stats">
-                <td class="rates__value">
-                  <div class="rates__characteristic">
-                    Комментарии
-                  </div>
-                  <svg class="rates__check rates__check--yes" width="33.7" height="25" aria-hidden="true">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
-                </td>
-              </tr>
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Комментарии
+                    </div>
+                    <svg class="rates__check rates__check--no" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Комментарии
+                    </div>
+                    <svg class="rates__check rates__check--no" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__value">
+                    <div class="rates__characteristic">
+                      Комментарии
+                    </div>
+                    <svg class="rates__check rates__check--yes" width="25" height="25" aria-hidden="true">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
+          <p class="rates__toggles slider__toggles">
+            <button class="slider__toggle" type="button"><span class="slider__dotes"></span></button>
+            <button class="slider__toggle slider__toggle--active" type="button"><span class="slider__dotes"></span></button>
+            <button class="slider__toggle" type="button"><span class="slider__dotes"></span></button>
+          </p>
         </div>
-        <p class="rates__toggles slider__toggles">
-          <button class="slider__toggle" type="button"><span class="slider__dotes"></span></button>
-          <button class="slider__toggle slider__toggle--active" type="button"><span class="slider__dotes"></span></button>
-          <button class="slider__toggle" type="button"><span class="slider__dotes"></span></button>
-        </p>
       </section>
 
       <section class="contacts">
@@ -449,10 +435,10 @@
       <div class="container">
         <div class="wrapper page-footer__wrapp">
           <div class="logo page-footer__logo">
-            <svg class="footer__image footer__image--mobile" width="147" height="40" aria-hidden="true">
+            <svg class="page-footer__image page-footer__image--mobile" width="147" height="40" aria-hidden="true">
               <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
-            <svg class="footer__image footer__image--desktop" width="147" height="40" aria-hidden="true">
+            <svg class="page-footer__image page-footer__image--desktop" width="147" height="40" aria-hidden="true">
               <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
           </div>
@@ -460,33 +446,37 @@
             <ul class="social__list">
               <li class="social__item social__item--twitter">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--twitter"  width="18px" height="15px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--twitter"  width="18px" height="15px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Твиттере</span>
                 </a>
               </li>
               <li class="social__item social__item--facebook">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--facebook" width="9px" height="20px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--facebook" width="9px" height="20px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item social__item--youtube">
                 <a href="#">
-                  <svg class="footer__icon footer__icon--youtube" width="15px" height="14px" fill="#d22856" aria-hidden="true">
+                  <svg class="page-footer__icon page-footer__icon--youtube" width="15px" height="14px" fill="#d22856" aria-hidden="true">
                     <use xlink:href="#icon-youtube"></use>
                   </svg>
+                  <span class="visually-hidden">На нашу страницу в Ютубе</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__develope develope">
-            <p class="develope__title">Разработано</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="develope__link">
-              <svg class="develope__img" width="27" height="34" fill="#d22856" aria-hidden="true">
+          <div class="page-footer__develop develop">
+            <p class="develop__title">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">
+              <svg class="develop__img" width="27" height="34" fill="#d22856" aria-hidden="true">
                 <use xlink:href="#logo-htmlacademy"></use>
               </svg>
+              <span class="visually-hidden">На страницу HTML Акадекмии</span>
             </a>
           </div>
         </div>

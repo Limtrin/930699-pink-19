@@ -3,13 +3,17 @@
   flex-direction: column;
 }
 
+.first-screen__image {
+  display: block;
+}
+
 .first-screen {
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+  background: url("../img/bg-back-mobile@1x.jpg");
   background-size: contain;
   background-color: @dark-blue-color;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
     background-color: @dark-blue-color;
   }
 }
@@ -33,12 +37,12 @@
 
 @media (min-width: @tablet-display) {
   .first-screen {
-    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat 50% 100%;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 100%;
     background-size: cover;
     background-color: @dark-blue-color;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
       background-color: @dark-blue-color;
     }
   }
@@ -46,11 +50,11 @@
   .first-screen__main {
     flex-direction: row;
     position: relative;
-    height: 617px;
+    height: 620px;
     background: none;
 
     .main-title {
-      margin-top: 14px;
+      margin-top: 6px;
     }
   }
 
@@ -67,19 +71,30 @@
     position: absolute;
     bottom: 0;
     width: 660px;
+    overflow: hidden;
+  }
+
+  .first-screen__image {
+    max-width: 108%;
+    margin-left: -20px;
   }
 }
 
 @media (min-width: @desktop-display) {
   .first-screen {
-    background: url("../../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
     background-color: @dark-blue-color;
     background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
       background-color: @dark-blue-color;
     }
+  }
+
+  .first-screen__image {
+    max-width: 110%;
+    margin-left: 25px;
   }
 
   .first-screen__main {
@@ -95,7 +110,6 @@
   }
 
   .first-screen__picture {
-    right: -120px;
     width: 100%;
   }
 }

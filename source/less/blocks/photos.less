@@ -1,29 +1,29 @@
-.photoes {
+.photos {
   background-color: white;
 }
 
-.photoes__intro {
+.photos__intro {
   text-align: center;
   font-size: 14px;
   line-height: 31px;
   margin: 43px 14px 49px;
 }
 
-.photoes__item {
+.photos__item {
   background-color: @light-grey-color;
   display: flex;
   flex-direction: column;
 }
 
-.photoes__wrapper {
+.photos__wrapper {
   padding: 18px 0 21px 18px;
 }
 
-.photoes__picture {
+.photos__picture {
   text-align: center;
 }
 
-.photoes__overlay {
+.photos__overlay {
   margin: 0;
   position: absolute;
   right: 20px;
@@ -36,97 +36,101 @@
   padding: 9px 19px;
 }
 
-.photoes__name {
+.photos__name {
   font-size: 14px;
 }
 
-.photoes__time {
+.photos__time {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-.photoes__describtion {
+.photos__describtion {
   font-size: 14px;
   line-height: 25px;
   overflow-wrap: anywhere;
   margin: 0;
 }
 
-.photoes__like {
+.photos__like {
   padding: 8px 0 21px 18px;
   margin-top: auto;
 }
 
-.photoes__outro {
+.photos__outro {
   font-size: 14px;
   text-align: center;
   margin: 42px 0;
   line-height: 30px;
 }
 
-.photoes__picture + .wrapper {
+.photos__text {
+  margin: 0;
+}
+
+.photos__picture + .wrapper {
   margin-top: -5px;
   padding: 0;
 }
 
-.photoes__item--panaram-of-the-day {
+.photos__item--panaram-of-the-day {
   background-color: white;
   margin-bottom: 21px;
 
-  .photoes__info {
+  .photos__info {
     margin: -5px 20px 0;
     background-color: @light-grey-color;
   }
 
-  .photoes__image {
+  .photos__image {
     width: 100%;
   }
 
-  .photoes__picture {
+  .photos__picture {
     position: relative;
     height: auto;
   }
 
-  .photoes__like {
+  .photos__like {
     padding: 0;
   }
 
-  .photoes__describtion {
+  .photos__describtion {
     padding-bottom: 5px;
   }
 }
 
-.photoes__container--overlay {
+.photos__container {
   position: relative;
 }
 
-.photoes__item:not(.photoes__item--panaram-of-the-day) {
+.photos__item:not(.photos__item--panaram-of-the-day) {
   margin-bottom: 23px;
   margin-left: 20px;
   margin-right: 20px;
 
-  .photoes__wrapper {
+  .photos__wrapper {
     padding-bottom: 1px;
   }
 }
 
 @media (min-width: @tablet-display) {
-  .photoes__intro {
+  .photos__intro {
     font-size: 18px;
     margin: 91px 0 76px;
     padding: 0 90px;
   }
 
-  .photoes__wrapper {
+  .photos__wrapper {
     padding: 27px 28px 23px 28px;
   }
 
-  .photoes__item--panaram-of-the-day {
+  .photos__item--panaram-of-the-day {
     width: 100%;
     margin-bottom: 0;
 
-    .photoes__wrapper {
+    .photos__wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -134,89 +138,89 @@
       margin-bottom: 50px;
     }
 
-    .photoes__describtion {
+    .photos__describtion {
       order: 3;
       min-height: auto;
       padding-bottom: 0;
     }
 
-    .photoes__like {
+    .photos__like {
       order: 2;
       padding: 0;
     }
 
-    .photoes__info {
+    .photos__info {
       margin: -5px 20px 0;
     }
   }
 
-  .photoes__like {
+  .photos__like {
     padding: 0 28px 23px 28px;
   }
 
-  .photoes__list {
+  .photos__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .photoes__item:not(.photoes__item--panaram-of-the-day) {
+  .photos__item:not(.photos__item--panaram-of-the-day) {
     margin: 0 10px 21px;
 
-    .photoes__info {
+    .photos__info {
       width: 300px;
       margin: 0 auto;
     }
 
-    .photoes__like {
+    .photos__like {
       padding-top: 14px;
     }
   }
 
-  .photoes__picture + .wrapper {
+  .photos__picture + .wrapper {
     padding: 0;
   }
 
-  .photoes__describtion {
+  .photos__describtion {
     min-height: 50px;
     overflow-wrap: anywhere;
   }
 
-  .photoes__outro {
+  .photos__outro {
     font-size: 18px;
     margin: 44px 0 67px;
   }
 
-  .photoes__overlay {
+  .photos__overlay {
     top: 60px;
   }
 }
 
 @media (min-width: @desktop-display) {
-  .photoes__intro {
+  .photos__intro {
     margin: 91px 0 86px;
     padding: 0 300px;
   }
 
-  .photoes__item:not(.photoes__item--panaram-of-the-day) {
+  .photos__item:not(.photos__item--panaram-of-the-day) {
     margin-bottom: 52px;
   }
 
-  .photoes__item--panaram-of-the-day {
-    .photoes__wrapper {
+  .photos__item--panaram-of-the-day {
+    .photos__wrapper {
       padding-bottom: 23px;
     }
 
-    .photoes__info {
+    .photos__info {
       margin: -5px 10px 0;
     }
   }
 
-  .photoes__overlay {
+  .photos__overlay {
     top: 56px;
   }
 
-  .photoes__outro {
+  .photos__outro {
     margin: 10px 0 67px;
   }
 }
